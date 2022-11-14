@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updating the DOM</title>
+</head>
+<body>
+    <script>
+        var arrayOfThings = []
+        document.getElementById("firstThings").innerHTML = arrayOfThings;
+
+        function addNewThing() {
+            var elementToAdd = `Thing ${arrayOfThings.length + 1}`;
+            arrayOfThings.push(elementToAdd)
+            document.getElementById('thing').innerText = arrayOfThings;
+            console.log(arrayOfThings)
+        }
+    </script>
+    <h1>Add Items to the Array</h1>
+    <p id="firstThings"></p>
+    <button onclick="addNewThing()">Add a thing</button>
+    <p id="thing"></p>
+</body>
+</html>
