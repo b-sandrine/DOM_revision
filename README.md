@@ -1,2 +1,2 @@
-# DOM_revision
-Stores code about DOM and some other projects 
+# javascript_revision
+Vanilla Javascript codes are found here.
